@@ -10,7 +10,8 @@
 }
 
 #main-title {
-    grid-column: 2;
+    grid-column: 1;
+    font-size: 4rem;
 }
 
  
