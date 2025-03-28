@@ -1,4 +1,4 @@
-
+/* HEADER-STYLING */
 
 @media screen and (min-width: 600px){
     .header-content {
@@ -45,3 +45,24 @@
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+  /* MAIN AREA */
+  .main-content-container {
+    display: flex;
+  }
+
+  #main-area-left {
+    background-color: blue;
+    flex-grow: 1
+  }
+
+  #main-area-center {
+    background-color: greenyellow;
+    flex-grow: 3;
+  }
+
+  #main-area-right {
+    background-color: blue;
+    flex-grow: 1;
+  }
