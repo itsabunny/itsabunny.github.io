@@ -1,68 +1,39 @@
-/* HEADER-STYLING */
-
-@media screen and (min-width: 930px){
-    .header-content {
-        display: flex;
-    }    
-}
-
-.header {
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-}
+/* Bara det som inte sköts av Tailwind – som dropdowns */
 
 .dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #7fdbb9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  background-color: #04AA6D;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #7fdbb9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
-  /* MAIN AREA */
-  .main-content-container {
-    display: flex;
-  }
+.dropdown-content a {
+  color: black;
+  padding: 0.5rem 1rem;
+  display: block;
+  text-decoration: none;
+}
 
-  #main-area-left {
-    background-color: blue;
-    flex-grow: 1
-  }
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-  #main-area-center {
-    background-color: greenyellow;
-    flex-grow: 3;
-  }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-  #main-area-right {
-    background-color: blue;
-    flex-grow: 1;
-  }
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
