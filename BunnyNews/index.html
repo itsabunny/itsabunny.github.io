@@ -7,7 +7,7 @@
   <meta name="author" content="Ninis Blomerus" />
   <link rel="icon" href="./images/noun-bunny-208196.png" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./style.cs">
+  <link rel="stylesheet" href="./style.css">
   <title>Bunny News</title>
 </head>
 
@@ -21,11 +21,27 @@
         <h1 class="text-3xl md:text-5xl font-bold">Bunny News</h1>
       </div>
       <nav class="flex flex-wrap gap-2 mt-4 md:mt-0">
-        <button class="dropbtn">News</button>
+        <div class="dropdown relative">
+          <button class="dropbtn">News</button>
+          <div class="dropdown-content absolute mt-2 rounded">
+            <a href="#">Headlines</a>
+            <a href="#">Global</a>
+            <a href="#">Science</a>
+          </div>
+        </div>
+      
         <button class="dropbtn">Locally</button>
         <button class="dropbtn">Sports</button>
-        <button class="dropbtn"><a href="#">Videos</a></button>
-        <button class="dropbtn"><a href="#">About Us</a></button>
+      
+        <div class="dropdown relative">
+          <button class="dropbtn">Videos</button>
+          <div class="dropdown-content absolute mt-2 rounded">
+            <a href="#">BunnyTube</a>
+            <a href="#">Fluffle Reels</a>
+          </div>
+        </div>
+      
+        <button class="dropbtn">About Us</button>
       </nav>
     </div>
   </header>

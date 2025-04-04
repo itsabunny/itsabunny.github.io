@@ -37,3 +37,14 @@
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
+
+/* Fix spacing and positioning */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
