@@ -15,6 +15,7 @@
   <title>Bunny News</title>
 </head>
 <body class="bg-green-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-500">
+
   <!-- Dark mode toggle -->
   <div class="flex justify-end p-4">
     <button onclick="document.documentElement.classList.toggle('dark')" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 dark:bg-yellow-300 dark:text-black dark:hover:bg-yellow-400">
@@ -29,62 +30,56 @@
         <img src="./images/noun-bunny-208196.png" alt="Cartoon bunny logo" class="w-12 sm:w-16 md:w-20" />
         <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold">Bunny News</h1>
       </div>
-      <nav class="flex overflow-x-auto gap-2 mt-4 md:mt-0 px-1 whitespace-nowrap">
-
-        <div class="dropdown relative group">
-          <button class="dropbtn">News</button>
-          <div class="dropdown-content absolute mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <a href="#">Headlines</a>
-            <a href="#">Global</a>
-            <a href="#">Science</a>
+      <div class="relative overflow-hidden w-full md:w-auto">
+        <nav class="flex overflow-x-auto gap-2 mt-4 md:mt-0 px-1 whitespace-nowrap scrollbar-hide pr-8">
+          <div class="dropdown relative group">
+            <button class="dropbtn">News</button>
+            <div class="dropdown-content absolute mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <a href="#">Headlines</a>
+              <a href="#">Global</a>
+              <a href="#">Science</a>
+            </div>
           </div>
-        </div>
-        
-        <button class="dropbtn">Sports</button>
-        <div class="dropdown relative group">
-          <button class="dropbtn">Videos</button>
-          <div class="dropdown-content absolute mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <a href="#">BunnyTube</a>
-            <a href="#">Fluffle Reels</a>
+          <button class="dropbtn">Locally</button>
+          <button class="dropbtn">Sports</button>
+          <div class="dropdown relative group">
+            <button class="dropbtn">Videos</button>
+            <div class="dropdown-content absolute mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <a href="#">BunnyTube</a>
+              <a href="#">Fluffle Reels</a>
+            </div>
           </div>
-        </div>
-        <button class="dropbtn">About Us</button>
-      </nav>
+          <button class="dropbtn">About Us</button>
+        </nav>
+        <div class="pointer-events-none absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-green-200 dark:from-gray-800 to-transparent"></div>
+      </div>
     </div>
   </header>
 
+  <!-- Carousel Section -->
   <section class="max-w-4xl mx-auto px-4 mt-8">
     <div class="relative w-full overflow-hidden rounded shadow bg-white dark:bg-gray-800">
-  
-      <!-- Slides -->
       <div class="flex transition-transform duration-500 ease-in-out" style="width:300%">
         <input class="hidden peer/page1" type="radio" name="carousel" id="page1" checked>
         <input class="hidden peer/page2" type="radio" name="carousel" id="page2">
         <input class="hidden peer/page3" type="radio" name="carousel" id="page3">
-  
-        <!-- Slide 1 -->
+
         <div class="w-full shrink-0 px-4 py-6 text-center peer-checked/page1:block hidden">
           <img src="https://placekitten.com/600/200" alt="Slide 1" class="mx-auto mb-4 rounded">
-          <h3 class="text-xl font-bold">Fluff Invasion on Mars</h3>
+          <h3 class="text-xl font-bold animate-fade-in">Fluff Invasion on Mars</h3>
           <p>Colonist bunnies launch their fluffiest mission yet.</p>
         </div>
-  
-        <!-- Slide 2 -->
         <div class="w-full shrink-0 px-4 py-6 text-center peer-checked/page2:block hidden">
           <img src="https://placekitten.com/601/200" alt="Slide 2" class="mx-auto mb-4 rounded">
-          <h3 class="text-xl font-bold">Burrow-Tech Advances</h3>
+          <h3 class="text-xl font-bold animate-fade-in">Burrow-Tech Advances</h3>
           <p>New tunnels with heated floors and carrot detection AI.</p>
         </div>
-  
-        <!-- Slide 3 -->
         <div class="w-full shrink-0 px-4 py-6 text-center peer-checked/page3:block hidden">
           <img src="https://placekitten.com/602/200" alt="Slide 3" class="mx-auto mb-4 rounded">
-          <h3 class="text-xl font-bold">Galactic Fluffle Fest</h3>
+          <h3 class="text-xl font-bold animate-fade-in">Galactic Fluffle Fest</h3>
           <p>Synchronized hopping across 3 planets. Don’t miss it!</p>
         </div>
       </div>
-  
-      <!-- Navigation dots -->
       <div class="flex justify-center gap-2 mt-4">
         <label for="page1" class="w-3 h-3 rounded-full bg-gray-400 hover:bg-gray-600 dark:bg-gray-500 cursor-pointer peer-checked/page1:bg-green-500"></label>
         <label for="page2" class="w-3 h-3 rounded-full bg-gray-400 hover:bg-gray-600 dark:bg-gray-500 cursor-pointer peer-checked/page2:bg-green-500"></label>
@@ -92,16 +87,21 @@
       </div>
     </div>
   </section>
-  
 
   <!-- Main layout -->
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 px-4 py-4">
     <aside class="md:col-span-1 bg-blue-100 dark:bg-gray-800 p-4 rounded shadow">
       <h2 class="text-xl font-semibold mb-2">Latest Articles</h2>
       <ul class="space-y-1">
-        <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Fluffy News #1</a></li>
+        <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Moon Rabbits on Mars</a></li>
+        <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Underground Burrows Discovered</a></li>
+        <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Fluffle Festival Announced</a></li>
+        <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Martian Carrots Break Taste Reco...</a></li>
+        <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Bunny Council Approves Spacep...</a></li>
+        <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Fluffy News #2</a></li>
         <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Hopper of the Week</a></li>
         <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Carrot Market Report</a></li>
+        <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Fluffy News #1</a></li>
       </ul>
     </aside>
     <main class="md:col-span-3 bg-white dark:bg-gray-800 p-4 rounded shadow animate-fade-in">
@@ -137,5 +137,16 @@
       <a href="#" class="hover:underline">Twitter</a>
     </div>
   </footer>
+
+  <!-- Carousel auto-rotation -->
+  <script>
+    const slides = ["page1", "page2", "page3"];
+    let current = 0;
+    setInterval(() => {
+      document.getElementById(slides[current]).checked = false;
+      current = (current + 1) % slides.length;
+      document.getElementById(slides[current]).checked = true;
+    }, 4000);
+  </script>
 </body>
 </html>
