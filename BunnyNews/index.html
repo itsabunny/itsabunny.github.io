@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-GB" class="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,11 +15,13 @@
   <link rel="stylesheet" href="./style.css">
   <title>Bunny News</title>
 </head>
+
 <body class="bg-green-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-500">
 
   <!-- Dark mode toggle -->
   <div class="flex justify-end p-4">
-    <button onclick="document.documentElement.classList.toggle('dark')" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 dark:bg-yellow-300 dark:text-black dark:hover:bg-yellow-400">
+    <button onclick="document.documentElement.classList.toggle('dark')"
+      class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 dark:bg-yellow-300 dark:text-black dark:hover:bg-yellow-400">
       Toggle Dark Mode
     </button>
   </div>
@@ -34,7 +37,8 @@
         <nav class="flex overflow-x-auto gap-2 mt-4 md:mt-0 px-1 whitespace-nowrap scrollbar-hide pr-8">
           <div class="dropdown relative group">
             <button class="dropbtn">News</button>
-            <div class="dropdown-content absolute mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div
+              class="dropdown-content absolute mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <a href="#">Headlines</a>
               <a href="#">Global</a>
               <a href="#">Science</a>
@@ -44,14 +48,17 @@
           <button class="dropbtn">Sports</button>
           <div class="dropdown relative group">
             <button class="dropbtn">Videos</button>
-            <div class="dropdown-content absolute mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div
+              class="dropdown-content absolute mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <a href="#">BunnyTube</a>
               <a href="#">Fluffle Reels</a>
             </div>
           </div>
           <button class="dropbtn">About Us</button>
         </nav>
-        <div class="pointer-events-none absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-green-200 dark:from-gray-800 to-transparent"></div>
+        <div
+          class="pointer-events-none absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-green-200 dark:from-gray-800 to-transparent">
+        </div>
       </div>
     </div>
   </header>
@@ -81,9 +88,12 @@
         </div>
       </div>
       <div class="flex justify-center gap-2 mt-4">
-        <label for="page1" class="w-3 h-3 rounded-full bg-gray-400 hover:bg-gray-600 dark:bg-gray-500 cursor-pointer peer-checked/page1:bg-green-500"></label>
-        <label for="page2" class="w-3 h-3 rounded-full bg-gray-400 hover:bg-gray-600 dark:bg-gray-500 cursor-pointer peer-checked/page2:bg-green-500"></label>
-        <label for="page3" class="w-3 h-3 rounded-full bg-gray-400 hover:bg-gray-600 dark:bg-gray-500 cursor-pointer peer-checked/page3:bg-green-500"></label>
+        <label for="page1"
+          class="w-3 h-3 rounded-full bg-gray-400 hover:bg-gray-600 dark:bg-gray-500 cursor-pointer peer-checked/page1:bg-green-500"></label>
+        <label for="page2"
+          class="w-3 h-3 rounded-full bg-gray-400 hover:bg-gray-600 dark:bg-gray-500 cursor-pointer peer-checked/page2:bg-green-500"></label>
+        <label for="page3"
+          class="w-3 h-3 rounded-full bg-gray-400 hover:bg-gray-600 dark:bg-gray-500 cursor-pointer peer-checked/page3:bg-green-500"></label>
       </div>
     </div>
   </section>
@@ -93,37 +103,71 @@
     <aside class="md:col-span-1 bg-blue-100 dark:bg-gray-800 p-4 rounded shadow">
       <h2 class="text-xl font-semibold mb-2">Latest Articles</h2>
       <ul class="space-y-1">
-        <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Moon Rabbits on Mars</a></li>
-        <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Underground Burrows Discovered</a></li>
-        <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Fluffle Festival Announced</a></li>
-        <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Martian Carrots Break Taste Reco...</a></li>
-        <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Bunny Council Approves Spacep...</a></li>
-        <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Fluffy News #2</a></li>
-        <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Hopper of the Week</a></li>
-        <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Carrot Market Report</a></li>
-        <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Fluffy News #1</a></li>
+        <li><a href="articles/10543.html" class="text-blue-700 dark:text-blue-400 hover:underline">Moon Rabbits on Mars</a></li>
+        <li><a href="articles/10542.html" class="text-blue-700 dark:text-blue-400 hover:underline">Underground Burrows Discovered</a></li>
+        <li><a href="articles/10541.html" class="text-blue-700 dark:text-blue-400 hover:underline">Fluffle Festival Announced</a></li>
+        <li><a href="articles/10540.html" class="text-blue-700 dark:text-blue-400 hover:underline">Martian Carrots Break Taste Reco...</a></li>
+        <li><a href="articles/10539.html" class="text-blue-700 dark:text-blue-400 hover:underline">Bunny Council Approves Spacep...</a></li>
+        <li><a href="articles/10538.html" class="text-blue-700 dark:text-blue-400 hover:underline">Hopper of the Week</a></li>
+        <li><a href="articles/10537.html" class="text-blue-700 dark:text-blue-400 hover:underline">Carrot Market Report</a></li>
       </ul>
     </aside>
     <main class="md:col-span-3 bg-white dark:bg-gray-800 p-4 rounded shadow animate-fade-in">
       <article class="mb-6">
-        <h2 class="text-2xl font-bold mb-2 hover:text-blue-500 dark:hover:text-yellow-300 transition-colors duration-200">Moon Rabbits on Mars</h2>
-        <p>New research suggests lunar bunnies are thriving on the Red Planet...</p>
+        <a href="articles/10543.html">
+          <h2
+            class="text-2xl font-bold mb-2 hover:text-blue-500 dark:hover:text-yellow-300 transition-colors duration-200">
+            Moon Rabbits on Mars</h2>
+          <p>New research suggests lunar bunnies are thriving on the Red Planet...</p>
+        </a>
       </article>
       <article class="mb-6">
-        <h2 class="text-2xl font-bold mb-2 hover:text-blue-500 dark:hover:text-yellow-300 transition-colors duration-200">Underground Burrows Discovered</h2>
-        <p>Martian soil hides massive warren networks built by colonist rabbits...</p>
+        <a href="articles/10542.html">
+          <h2
+            class="text-2xl font-bold mb-2 hover:text-blue-500 dark:hover:text-yellow-300 transition-colors duration-200">
+            Underground Burrows Discovered</h2>
+          <p>Martian soil hides massive warren networks built by colonist rabbits...</p>
+        </a>
       </article>
       <article class="mb-6">
-        <h2 class="text-2xl font-bold mb-2 hover:text-blue-500 dark:hover:text-yellow-300 transition-colors duration-200">Fluffle Festival Announced</h2>
-        <p>Bunny communities across the galaxy are preparing for the annual Fluffle Festival...</p>
+        <a href="articles/10541.html">
+          <h2
+            class="text-2xl font-bold mb-2 hover:text-blue-500 dark:hover:text-yellow-300 transition-colors duration-200">
+            Fluffle Festival Announced</h2>
+          <p>Bunny communities across the galaxy are preparing for the annual Fluffle Festival...</p>
+        </a>
       </article>
       <article class="mb-6">
-        <h2 class="text-2xl font-bold mb-2 hover:text-blue-500 dark:hover:text-yellow-300 transition-colors duration-200">Martian Carrots Break Taste Records</h2>
-        <p>Scientists have confirmed what bunnies already knew...</p>
+        <a href="articles/10540.html">
+          <h2
+            class="text-2xl font-bold mb-2 hover:text-blue-500 dark:hover:text-yellow-300 transition-colors duration-200">
+            Martian Carrots Break Taste Records</h2>
+          <p>Scientists have confirmed what bunnies already knew...</p>
+        </a>
       </article>
       <article>
-        <h2 class="text-2xl font-bold mb-2 hover:text-blue-500 dark:hover:text-yellow-300 transition-colors duration-200">Bunny Council Approves Spaceport Expansion</h2>
-        <p>After months of deliberation, the Intergalactic Bunny Council has approved expansion...</p>
+        <a href="articles/10539.html">
+          <h2
+            class="text-2xl font-bold mb-2 hover:text-blue-500 dark:hover:text-yellow-300 transition-colors duration-200">
+            Bunny Council Approves Spaceport Expansion</h2>
+          <p>After months of deliberation, the Intergalactic Bunny Council has approved expansion...</p>
+        </a>
+      </article>
+      <article>
+        <a href="articles/10538.html">
+          <h2
+            class="text-2xl font-bold mb-2 hover:text-blue-500 dark:hover:text-yellow-300 transition-colors duration-200">
+            Hopper of the Week</h2>
+          <p>Hopper of the Week</p>
+        </a>
+      </article>
+      <article>
+        <a href="articles/10537.html">
+          <h2
+            class="text-2xl font-bold mb-2 hover:text-blue-500 dark:hover:text-yellow-300 transition-colors duration-200">
+            Carrot Market Report</h2>
+          <p>Carrot Market Report</p>
+        </a>
       </article>
     </main>
   </div>
@@ -149,4 +193,5 @@
     }, 4000);
   </script>
 </body>
+
 </html>
