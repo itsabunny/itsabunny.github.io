@@ -12,7 +12,9 @@
       darkMode: 'class'
     };
   </script>
-  <link rel="stylesheet" href="./style.css">
+  <!-- NO CSS FILE, JUST 100% TAILWIND
+   <link rel="stylesheet" href="./style.css"> 
+   -->
   <title>Bunny News</title>
 </head>
 
@@ -35,25 +37,9 @@
       </div>
       <div class="relative overflow-hidden w-full md:w-auto">
         <nav class="flex overflow-x-auto gap-2 mt-4 md:mt-0 px-1 whitespace-nowrap scrollbar-hide pr-8">
-          <div class="dropdown relative group">
-            <button class="dropbtn">News</button>
-            <div
-              class="dropdown-content absolute mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <a href="#">Headlines</a>
-              <a href="#">Global</a>
-              <a href="#">Science</a>
-            </div>
-          </div>
-          <button class="dropbtn">Locally</button>
-          <button class="dropbtn">Sports</button>
-          <div class="dropdown relative group">
-            <button class="dropbtn">Videos</button>
-            <div
-              class="dropdown-content absolute mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <a href="#">BunnyTube</a>
-              <a href="#">Fluffle Reels</a>
-            </div>
-          </div>
+          <button class="dropbtn">News</button>        
+          <button class="dropbtn">Sports</button>      
+          <button class="dropbtn">Videos</button>    
           <button class="dropbtn">About Us</button>
         </nav>
         <div
@@ -78,7 +64,9 @@
         <li><a href="#" class="text-blue-700 dark:text-blue-400 hover:underline">Carrot Market Report</a></li>
       </ul>
     </aside>
+    
     <main class="md:col-span-3 bg-white dark:bg-gray-800 p-4 rounded shadow animate-fade-in">
+    
       <article class="mb-6">
         <a href="#">
           <h2
@@ -87,6 +75,7 @@
           <p>New research suggests lunar bunnies are thriving on the Red Planet...</p>
         </a>
       </article>
+      
       <article class="mb-6">
         <a href="#">
           <h2
@@ -95,6 +84,7 @@
           <p>Martian soil hides massive warren networks built by colonist rabbits...</p>
         </a>
       </article>
+      
       <article class="mb-6">
         <a href="#">
           <h2
@@ -103,6 +93,7 @@
           <p>Bunny communities across the galaxy are preparing for the annual Fluffle Festival...</p>
         </a>
       </article>
+      
       <article class="mb-6">
         <a href="#">
           <h2
@@ -111,6 +102,7 @@
           <p>Scientists have confirmed what bunnies already knew...</p>
         </a>
       </article>
+      
       <article>
         <a href="#">
           <h2
@@ -119,6 +111,7 @@
           <p>After months of deliberation, the Intergalactic Bunny Council has approved expansion...</p>
         </a>
       </article>
+      
       <article>
         <a href="#">
           <h2
@@ -127,6 +120,7 @@
           <p>Hopper of the Week</p>
         </a>
       </article>
+
       <article>
         <a href="#">
           <h2
@@ -147,17 +141,7 @@
       <a href="#" class="hover:underline">Twitter</a>
     </div>
   </footer>
-
-  <!-- Carousel auto-rotation -->
-  <script>
-    const slides = ["page1", "page2", "page3"];
-    let current = 0;
-    setInterval(() => {
-      document.getElementById(slides[current]).checked = false;
-      current = (current + 1) % slides.length;
-      document.getElementById(slides[current]).checked = true;
-    }, 4000);
-  </script>
+  
 </body>
 
 </html>
