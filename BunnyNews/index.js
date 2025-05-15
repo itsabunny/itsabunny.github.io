@@ -80,7 +80,7 @@ function renderArticles() {
   });
 }
 
-// Formulärhantering
+// Form handeling
 document.getElementById("articleForm").addEventListener("submit", function (e) {
   e.preventDefault();
   const title = document.getElementById("title").value.trim();
@@ -91,15 +91,15 @@ document.getElementById("articleForm").addEventListener("submit", function (e) {
 
   const newArticle = { title, content, date };
   const articles = getArticles();
-  articles.unshift(newArticle); // lägg först i listan
+  articles.unshift(newArticle); // Add at the top
   saveArticles(articles);
   renderArticles();
-  showToast("Artikel skapad!");
+  showToast("Article added!");
 
-  // Nollställ form + stäng modal
+  // Reset form + close modal
   this.reset();
   document.getElementById("addNewArticle").style.display = "none";
 });
 
-// Ladda artiklar vid sidstart
+// Load artiklar vid sidstart
 window.onload = renderArticles;
