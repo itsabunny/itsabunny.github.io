@@ -55,7 +55,10 @@
 }
 
 /* Modal Body */
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  padding: 2px 16px; 
+  color: black;
+}
 
 /* Modal Footer */
 .modal-footer {
