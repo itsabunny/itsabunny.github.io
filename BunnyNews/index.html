@@ -56,27 +56,7 @@
     <aside class="md:col-span-1 bg-blue-100 dark:bg-gray-800 p-4 rounded shadow">
 
       <button id="addNewArticleButton">Add New Article</button>
-      <div id="addNewArticle" class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close">&times;</span>
-            <h2>Add New Article</h2>
-          </div>
-          <div class="modal-body">
-            <form>
-              <label for="headlineNewArticle">Headline</label><br>
-              <input type="text" id="headlineNewArticle" name="headlineNewArticle"><br>
-              <label for="contentNewArticle">Content</label><br>
-              <input form="contentNewArticle" name="contentNewArticle">
-            </form>
-            
-            <p>Add the Form</p>
-          </div>
-          <div class="modal-footer">
-            <h3>Modal Footer</h3>
-          </div>
-        </div>
-      </div>
+      
 
       <h2 class="text-xl font-semibold mb-2">Latest Articles</h2>
       <ul class="space-y-1">
@@ -158,8 +138,38 @@
       </article>
 
     </main>
-    <article id="new-article">Yay!</article>
   </div>
+
+  <!-- Modal for adding new article -->
+  <div id="addNewArticle" class="modal">
+    <div class="modal-content p-4 rounded shadow-lg">
+      <span class="close">&times;</span>
+      <h2 class="text-xl font-bold mb-4">Ny artikel</h2>
+      <form id="articleForm" class="space-y-4">
+        <div>
+          <label for="title" class="block font-semibold">Titel:</label>
+          <input type="text" id="title" name="title" required class="w-full p-2 border rounded" />
+        </div>
+        <div>
+          <label for="content" class="block font-semibold">Innehåll:</label>
+          <textarea id="content" name="content" rows="4" class="w-full p-2 border rounded"></textarea>
+        </div>
+        <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+          Spara artikel
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast notification -->
+  <div id="toast" class="fixed bottom-4 right-4 bg-black text-white px-4 py-2 rounded hidden z-50"></div>
+
+  <!-- Article list -->
+  <section class="max-w-4xl mx-auto p-4">
+    <h2 class="text-2xl font-bold mb-4">Senaste artiklar</h2>
+    <div id="articles" class="space-y-4"></div>
+  </section>
+
 
   <!-- Footer -->
   <footer class="bg-green-300 dark:bg-gray-700 text-center py-4 mt-10">
