@@ -1,104 +1,99 @@
-// Get the modal
 const modal = document.getElementById("addNewArticle");
-
-// Get the button that opens the modal
 const btn = document.getElementById("addNewArticleButton");
-
-// Get the <span> element that closes the modal
 const span = document.getElementsByClassName("close")[0];
 
-// Open modal
-btn.onclick = function () {
-  modal.style.display = "block";
-};
+btn.onclick = () => modal.style.display = "block";
+span.onclick = () => modal.style.display = "none";
+window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; };
 
-// Close modal with X
-span.onclick = function () {
-  modal.style.display = "none";
-};
-
-// Close modal when clicking outside
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
-
-// Toast
 function showToast(message) {
   const toast = document.getElementById("toast");
   toast.textContent = message;
   toast.classList.remove("hidden");
-
-  setTimeout(() => {
-    toast.classList.add("hidden");
-  }, 3000);
+  setTimeout(() => toast.classList.add("hidden"), 3000);
 }
 
-// LocalStorage helpers
 function getArticles() {
-  return JSON.parse(localStorage.getItem("articles")) || [];
+  return JSON.parse(localStorage.getItem("articles")) || {};
 }
 
 function saveArticles(articles) {
   localStorage.setItem("articles", JSON.stringify(articles));
 }
 
-// Render articles
 function renderArticles() {
   const container = document.getElementById("articles");
   container.innerHTML = "";
 
   const articles = getArticles();
-  articles.forEach((article, index) => {
-    const articleEl = document.createElement("div");
-    articleEl.className = "p-4 border rounded bg-white dark:bg-gray-800";
+  const sorted = Object.entries(articles).sort((a, b) => b[0].localeCompare(a[0])).reverse();
 
-    articleEl.innerHTML = `
-      <a href="article.html?id=${index}">
+  for (const [id, article] of sorted) {
+    const el = document.createElement("div");
+    el.className = "p-4 border rounded bg-white dark:bg-gray-800";
+    el.innerHTML = `
+      <a href="article.html?id=${id}">
         <h3 class="text-xl font-semibold hover:text-blue-600 dark:hover:text-yellow-300">${article.title}</h3>
       </a>
       <p class="text-sm text-gray-500">${article.date}</p>
       <p class="my-2">${article.content.length > 60 ? article.content.slice(0, 60) + "..." : article.content}</p>
-      <button data-index="${index}" class="delete-article bg-red-600 text-white px-2 py-1 rounded hover:bg-red-700">
-        Radera
-      </button>
+      <button data-id="${id}" class="delete-article bg-red-600 text-white px-2 py-1 rounded hover:bg-red-700">Delete</button>
     `;
-
-    container.appendChild(articleEl);
-  });
+    container.appendChild(el);
+  }
 
   document.querySelectorAll(".delete-article").forEach(btn => {
     btn.addEventListener("click", (e) => {
-      const index = e.target.getAttribute("data-index");
+      const id = e.target.getAttribute("data-id");
       const articles = getArticles();
-      articles.splice(index, 1);
+      delete articles[id];
       saveArticles(articles);
       renderArticles();
-      showToast("Artikel raderad!");
+      renderLatestSidebarArticles();
+      showToast("Article deleted!");
     });
   });
 }
 
-// Form
+function renderLatestSidebarArticles(limit = 3) {
+  const sidebarList = document.getElementById("latest-articles");
+  if (!sidebarList) return;
+
+  sidebarList.innerHTML = "";
+
+  const articles = getArticles();
+  const sorted = Object.entries(articles)
+    .sort((a, b) => b[0].localeCompare(a[0]))
+    .slice(0, limit);
+
+  for (const [id, article] of sorted) {
+    const li = document.createElement("li");
+    li.innerHTML = `<a href="article.html?id=${id}" class="text-blue-700 dark:text-blue-400 hover:underline">${article.title}</a>`;
+    sidebarList.appendChild(li);
+  }
+}
+
 document.getElementById("articleForm").addEventListener("submit", function (e) {
   e.preventDefault();
   const title = document.getElementById("title").value.trim();
   const content = document.getElementById("content").value.trim();
-  const date = new Date().toLocaleDateString();
+  const date = new Date().toLocaleString();
+  const id = new Date().toISOString();
 
   if (!title) return;
 
-  const newArticle = { title, content, date };
+  const newArticle = { id, title, content, date };
   const articles = getArticles();
-  articles.unshift(newArticle);
+  articles[id] = newArticle;
   saveArticles(articles);
   renderArticles();
-  showToast("Artikel skapad!");
-
+  renderLatestSidebarArticles();
+  showToast("Article created!");
   this.reset();
-  document.getElementById("addNewArticle").style.display = "none";
+  modal.style.display = "none";
 });
 
-// Load artiklar vid sidstart
-window.onload = renderArticles;
+window.onload = () => {
+  renderArticles();
+  renderLatestSidebarArticles();
+};
