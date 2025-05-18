@@ -8,17 +8,17 @@ const btn = document.getElementById("addNewArticleButton");
 const span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
+btn.onclick = function () {
   modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function () {
   modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
@@ -32,7 +32,7 @@ function showToast(message) {
 
   setTimeout(() => {
     toast.classList.add("hidden");
-  }, 3000);
+  }, 5000);
 }
 
 // Ladda artiklar från localStorage
@@ -56,13 +56,16 @@ function renderArticles() {
     articleEl.className = "p-4 border rounded bg-white dark:bg-gray-800";
 
     articleEl.innerHTML = `
-      <h3 class="text-xl font-semibold">${article.title}</h3>
-      <p class="text-sm text-gray-500">${article.date}</p>
-      <p class="my-2">${article.content.length > 60 ? article.content.slice(0, 60) + "..." : article.content}</p>
-      <button data-index="${index}" class="delete-article bg-red-600 text-white px-2 py-1 rounded hover:bg-red-700">
-        Radera
-      </button>
-    `;
+  <a href="article.html?id=${index}">
+    <h3 class="text-xl font-semibold hover:text-blue-600 dark:hover:text-yellow-300">${article.title}</h3>
+  </a>
+  <p class="text-sm text-gray-500">${article.date}</p>
+  <p class="my-2">${article.content.length > 60 ? article.content.slice(0, 60) + "..." : article.content}</p>
+  <button data-index="${index}" class="delete-article bg-red-600 text-white px-2 py-1 rounded hover:bg-red-700">
+    Delete
+  </button>
+`;
+
 
     container.appendChild(articleEl);
   });
