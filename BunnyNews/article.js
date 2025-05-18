@@ -9,19 +9,80 @@ function renderArticle() {
 
   if (id === null) {
     document.getElementById("article-title").textContent = "Artikel saknas";
-    return;
+    return null;
   }
 
   const article = getArticleById(id);
 
   if (!article) {
     document.getElementById("article-title").textContent = "Kunde inte hitta artikel";
-    return;
+    return null;
   }
 
   document.getElementById("article-title").textContent = article.title;
   document.getElementById("article-date").textContent = article.date;
   document.getElementById("article-content").textContent = article.content;
+
+  return id;
 }
 
-window.onload = renderArticle;
+// Kommentarhantering
+function getComments(articleId) {
+  const allComments = JSON.parse(localStorage.getItem("comments")) || {};
+  return allComments[articleId] || [];
+}
+
+function saveComment(articleId, commentObj) {
+  const allComments = JSON.parse(localStorage.getItem("comments")) || {};
+  if (!allComments[articleId]) {
+    allComments[articleId] = [];
+  }
+  allComments[articleId].push(commentObj);
+  localStorage.setItem("comments", JSON.stringify(allComments));
+}
+
+function renderComments(articleId) {
+  const list = document.getElementById("comments-list");
+  list.innerHTML = "";
+
+  const comments = getComments(articleId);
+  comments.forEach((comment) => {
+    const li = document.createElement("li");
+    li.className = "bg-white dark:bg-gray-700 p-3 rounded";
+
+    if (typeof comment === "object" && comment.name && comment.time && comment.text) {
+      li.innerHTML = `
+        <p class="text-sm text-gray-500 mb-1">${comment.name} – ${comment.time}</p>
+        <p>${comment.text}</p>
+      `;
+    } else {
+      li.textContent = "Kommentar (äldre format): " + comment;
+    }
+
+    list.appendChild(li);
+  });
+}
+
+// Körs vid sidladdning
+window.onload = () => {
+  const articleId = renderArticle();
+
+  if (articleId !== null) {
+    renderComments(articleId);
+
+    document.getElementById("comment-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById("comment-name").value.trim();
+      const text = document.getElementById("comment-text").value.trim();
+      const time = new Date().toLocaleString();
+
+      if (name && text) {
+        const newComment = { name, text, time };
+        saveComment(articleId, newComment);
+        renderComments(articleId);
+        document.getElementById("comment-form").reset();
+      }
+    });
+  }
+};
