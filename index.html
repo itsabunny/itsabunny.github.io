@@ -1,48 +1,82 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Ninis Blomerus</title>
-        <meta name="author" content="Ninis Blomerus">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="image_src" href="./BunnyNews/images/noun-bunny-208196.png">
-        <link rel="icon" href="./BunnyNews/images/noun-bunny-208196.png">
 
-        <link rel="stylesheet" href="style.css">
+<head>
+    <title>Ninis Blomerus</title>
+    <meta name="author" content="Ninis Blomerus">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="image_src" href="./BunnyNews/images/noun-bunny-208196.png">
+    <link rel="icon" href="./BunnyNews/images/noun-bunny-208196.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' };
+    </script>
+    <link rel="stylesheet" href="style.css">
 
-        <!-- Font Awesome Icons -->
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    </head>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
 
-    <body>
-        <br>
+<body>
 
-        <div class="container">
-            <div class="my-nav">
-                <div id="my-title"><b><a href="/">Ninis Coding</a></b></div>
-                <div class="my-nav-content">
-                    <ul>
-                        <li><a href="https://www.youtube.com/@BabyBunny-Cottontail?sub_confirmation=1" target="_blank"><i class="fab fa-youtube-square fa-2x"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/ninis-blomerus/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                        <li><a href="https://github.com/itsabunny" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
-                    </ul>
-                </div>
+
+
+    <!-- Header -->
+    <header class="sticky top-0 z-10 bg-green-200 dark:bg-gray-800 border-b-2 border-black dark:border-gray-700">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-4">
+            <div class="flex items-center gap-4">
+                <img src="./images/noun-bunny-208196.png" alt="Cartoon bunny logo" class="w-12 sm:w-16 md:w-20" />
+                <h1 class="text-3xl md:text-5xl font-bold">Bunny News</h1>
             </div>
-            
-            <div>
-                <div class="my-header">About</div>
-                <p>
-                    Welcome to my web page! Here you will find the list of my programming projects and other projects.                     
-                </p>
-                <p>
-                    <a href="./BunnyNews/index.html">BunnyNews</a>
-                </p>
+
+            <nav class="flex gap-2 mt-4 md:mt-0">
+                <button class="dropbtn">News</button>
+                <button class="dropbtn">Sports</button>
+                <button class="dropbtn">Videos</button>
+                <button class="dropbtn">About Us</button>
+            </nav>
+            <!-- Dark mode toggle -->
+            <div class="flex justify-end p-4">
+                <button onclick="document.documentElement.classList.toggle('dark')"
+                    class="bg-gray-800 text-white px-4 py-2 rounded dark:bg-yellow-300 dark:text-black hover:bg-gray-700 dark:hover:bg-yellow-400">
+                    Toggle Dark Mode
+                </button>
             </div>
-    </body>
+        </div>
+
+    </header>
+    <br>
+    <div class="container">
+        <div class="my-nav">
+            <div id="my-title"><b><a href="/">Ninis Coding</a></b></div>
+            <div class="my-nav-content">
+                <ul>
+                    <li><a href="https://www.youtube.com/@BabyBunny-Cottontail?sub_confirmation=1" target="_blank"><i
+                                class="fab fa-youtube-square fa-2x"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/ninis-blomerus/" target="_blank"><i
+                                class="fab fa-linkedin fa-2x"></i></a></li>
+                    <li><a href="https://github.com/itsabunny" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <div class="my-header">About</div>
+            <p>
+                Welcome to my web page! Here you will find the list of my programming projects and other projects.
+            </p>
+            <p>
+                <a href="./BunnyNews/index.html">BunnyNews</a>
+            </p>
+        </div>
+</body>
 
 </html>
