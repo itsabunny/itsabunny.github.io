@@ -2,9 +2,10 @@
 <html>
 
 <head>
-    <title>Ninis Blomerus</title>
+    <title>Ninis Blomerus - Java/JavaScript Developer</title>
     <meta name="author" content="Ninis Blomerus">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mjukvarutestare på väg mot fullstack Java/JavaScript-utveckling. Portfolio och CV.">
     <link rel="image_src" href="./BunnyNews/images/noun-bunny-208196.png">
     <link rel="icon" href="./BunnyNews/images/noun-bunny-208196.png">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -26,21 +27,20 @@
 
 <body>
 
-
-
     <!-- Header -->
     <header class="sticky top-0 z-10 bg-green-200 dark:bg-gray-800 border-b-2 border-black dark:border-gray-700">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-4">
             <div class="flex items-center gap-4">
                 <img src="./images/noun-bunny-208196.png" alt="Cartoon bunny logo" class="w-12 sm:w-16 md:w-20" />
-                <h1 class="text-3xl md:text-5xl font-bold">Ninis Coding</h1>
+                <h1 class="text-3xl md:text-5xl font-bold dark:text-white">Ninis Blomerus</h1>
             </div>
 
             <nav class="flex gap-2 mt-4 md:mt-0">
-                <button class="dropbtn">News</button>
-                <button class="dropbtn">Sports</button>
-                <button class="dropbtn">Videos</button>
-                <button class="dropbtn">About Us</button>
+                <a href="#about" class="dropbtn">Om mig</a>
+                <a href="#education" class="dropbtn">Utbildning</a>
+                <a href="#skills" class="dropbtn">Kompetenser</a>
+                <a href="#projects" class="dropbtn">Projekt</a>
+                <a href="#contact" class="dropbtn">Kontakt</a>
             </nav>
             <!-- Dark mode toggle -->
             <div class="flex justify-end p-4">
@@ -51,31 +51,322 @@
             </div>
         </div>
     </header>
-    <br>
-    <div class="container">
-        <div class="my-nav">
-            <div id="my-title"><b><a href="/">Ninis Coding</a></b></div>
-            <div class="my-nav-content">
-                <ul>
-                    <li><a href="https://www.youtube.com/@BabyBunny-Cottontail?sub_confirmation=1" target="_blank"><i
-                                class="fab fa-youtube-square fa-2x"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/ninis-blomerus/" target="_blank"><i
-                                class="fab fa-linkedin fa-2x"></i></a></li>
-                    <li><a href="https://github.com/itsabunny" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                    </li>
-                </ul>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-green-100 to-blue-100 dark:from-gray-800 dark:to-gray-900 py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4 dark:text-white">Ninis Blomerus</h2>
+            <p class="text-xl md:text-2xl mb-6 dark:text-gray-300">Java/JavaScript-utvecklare & Mjukvarutestare</p>
+            <p class="text-lg max-w-3xl mx-auto mb-8 dark:text-gray-400">
+                Mjukvarutestare på väg mot fullstack Java/JavaScript-utveckling. Stark grund i Java (VG), 
+                databaser (VG), JavaScript/HTML/CSS (VG) och agila arbetssätt. Brinner för kvalitet, 
+                test och tillgänglighet (WCAG).
+            </p>
+            <div class="flex justify-center gap-4 mb-6">
+                <a href="https://github.com/itsabunny" target="_blank" 
+                   class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/ninis-blomerus/" target="_blank" 
+                   class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:ninis.blomerus@proton.me" 
+                   class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700">
+                    <i class="fas fa-envelope"></i> Kontakta mig
+                </a>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+                <i class="fas fa-briefcase"></i> Söker LIA från 2025-11-24 till 2026-05-08
+            </p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center dark:text-white">Om mig</h2>
+            <div class="max-w-4xl mx-auto">
+                <p class="text-lg mb-4 dark:text-gray-300">
+                    Jag är en nyfiken och driven utvecklare med bakgrund inom mjukvarutestning och tillgänglighet. 
+                    Min erfarenhet av att säkra kvalitet och användarvänlighet kombinerat med min passion för 
+                    programmering gör mig till en utvecklare som tänker helhetligt.
+                </p>
+                <p class="text-lg mb-4 dark:text-gray-300">
+                    Just nu studerar jag Javautvecklare på EC Utbildning i Örebro och har fått VG i de flesta kurser, 
+                    inklusive Programmering i Java, Avancerad Java, JavaScript, HTML/CSS och Databasdesign.
+                </p>
+                <p class="text-lg dark:text-gray-300">
+                    Jag trivs i agila team och söker LIA/extrajobb där jag kan bidra med testdisciplin och 
+                    leverera funktionalitet end-to-end.
+                </p>
             </div>
         </div>
+    </section>
 
-        <div>
-            <div class="my-header">About</div>
-            <p>
-                Welcome to my web page! Here you will find the list of my programming projects and other projects.
-            </p>
-            <p>
-                <a href="./BunnyNews/index.html">BunnyNews</a>
-            </p>
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Kompetenser</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Språk & ramverk -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4 text-green-600 dark:text-green-400">
+                        <i class="fas fa-code"></i> Språk & ramverk
+                    </h3>
+                    <ul class="space-y-2 dark:text-gray-300">
+                        <li>• Java</li>
+                        <li>• JavaScript</li>
+                        <li>• HTML & CSS</li>
+                    </ul>
+                </div>
+
+                <!-- Backend -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600 dark:text-blue-400">
+                        <i class="fas fa-server"></i> Backend
+                    </h3>
+                    <ul class="space-y-2 dark:text-gray-300">
+                        <li>• REST</li>
+                        <li>• Java Web Services</li>
+                    </ul>
+                </div>
+
+                <!-- Databaser -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4 text-purple-600 dark:text-purple-400">
+                        <i class="fas fa-database"></i> Databaser
+                    </h3>
+                    <ul class="space-y-2 dark:text-gray-300">
+                        <li>• Databaskonstruktion</li>
+                        <li>• PostgreSQL</li>
+                    </ul>
+                </div>
+
+                <!-- Test -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4 text-red-600 dark:text-red-400">
+                        <i class="fas fa-check-circle"></i> Test
+                    </h3>
+                    <ul class="space-y-2 dark:text-gray-300">
+                        <li>• Testautomatisering</li>
+                        <li>• Icke-funktionella tester</li>
+                        <li>• Teststrategier</li>
+                        <li>• WCAG</li>
+                    </ul>
+                </div>
+
+                <!-- Arbetssätt -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4 text-yellow-600 dark:text-yellow-400">
+                        <i class="fas fa-users"></i> Arbetssätt
+                    </h3>
+                    <ul class="space-y-2 dark:text-gray-300">
+                        <li>• Agilt (Scrum/Kanban)</li>
+                        <li>• Projektkunskap</li>
+                    </ul>
+                </div>
+
+                <!-- Verktyg -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4 text-gray-600 dark:text-gray-400">
+                        <i class="fas fa-tools"></i> Verktyg
+                    </h3>
+                    <ul class="space-y-2 dark:text-gray-300">
+                        <li>• Git & GitHub</li>
+                        <li>• IntelliJ IDEA</li>
+                        <li>• VS Code</li>
+                        <li>• Bruno (API-test)</li>
+                        <li>• Apache JMeter</li>
+                        <li>• Jira</li>
+                        <li>• Docker (grund)</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-white dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Utbildning</h2>
+
+            <div class="max-w-4xl mx-auto space-y-8">
+
+                <!-- Javautvecklare -->
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2 dark:text-white">EC Utbildning, Örebro</h3>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 mb-4">Javautvecklare (2024–2026, pågående)</p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-bold mb-2 dark:text-gray-300">Avklarade kurser:</h4>
+                            <ul class="space-y-1 text-sm dark:text-gray-400">
+                                <li>• Programmering i Java (30p) — VG</li>
+                                <li>• Avancerad Javaprogrammering (25p) — VG</li>
+                                <li>• Projektkunskap enligt agila metoder (20p) — VG</li>
+                                <li>• Praktisk databasdesign (20p) — VG</li>
+                                <li>• Webbutveckling i Java (25p) — G</li>
+                                <li>• Java Web-services (20p) — G</li>
+                                <li>• HTML och CSS (25p) — VG</li>
+                                <li>• JavaScript (25p) — VG</li>
+                                <li>• Avancerad JavaScript (25p) — VG</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-2 dark:text-gray-300">Kommande kurser:</h4>
+                            <ul class="space-y-1 text-sm dark:text-gray-400">
+                                <li>• Mobilutveckling med JavaScript (25p)</li>
+                                <li>• Skalbara tjänster (20p)</li>
+                                <li>• LIA (120p)</li>
+                                <li>• Examensarbete (20p)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testautomatiserare -->
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2 dark:text-white">IT-Högskolan Sverige AB</h3>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 mb-4">Agil testautomatiserare (Maj 2024 – Jun 2024)</p>
+                    <ul class="space-y-1 text-sm dark:text-gray-400">
+                        <li>• Agil testautomatisering</li>
+                        <li>• Automatiserad testning och testverktyg</li>
+                    </ul>
+                </div>
+
+                <!-- Mjukvarutestare -->
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2 dark:text-white">EC Utbildning, Örebro</h3>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 mb-4">Mjukvarutestare (Aug 2022 – Feb 2024)</p>
+                    <ul class="space-y-1 text-sm dark:text-gray-400">
+                        <li>• Introduktion till test — VG</li>
+                        <li>• Introduktion till programmering — VG</li>
+                        <li>• Projektarbete i teorin — VG</li>
+                        <li>• Mjukvarutest i praktiken — VG</li>
+                        <li>• Icke funktionella tester — VG</li>
+                        <li>• Testautomatisering & programmering — VG</li>
+                        <li>• Teststrategier — VG</li>
+                        <li>• Agilt projektarbete — VG</li>
+                        <li>• LIA (55p) — VG</li>
+                        <li>• Examensarbete — VG</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Arbetslivserfarenhet</h2>
+
+            <div class="max-w-4xl mx-auto space-y-8">
+
+                <!-- Webbstart -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2 dark:text-white">Webbstart Sverige HB, Örebro</h3>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 mb-2">Testare, Copywriter, WCAG</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-500 mb-4">Maj 2021 – Maj 2023</p>
+                    <p class="dark:text-gray-300">
+                        Mjukvarutester för kvalitet och UX, copyproduktion och WCAG-anpassningar av webbplatser/dokument. 
+                        Viss drönarfoto (innehar drönarkörkort).
+                    </p>
+                </div>
+
+                <!-- WCAG Networks -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2 dark:text-white">WCAG Networks AB</h3>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 mb-2">User testing, Tillgänglighetsanpassning</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-500 mb-4">Juni 2020 – Aug 2023</p>
+                    <p class="dark:text-gray-300">
+                        Användartester av kommunwebbar, dokumentanpassning och textning med fokus på tillgänglighet.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Projekt</h2>
+            <div class="text-center mb-8">
+                <p class="text-lg dark:text-gray-300 mb-4">
+                    Se mina programmeringsprojekt på GitHub
+                </p>
+                <a href="https://github.com/itsabunny" target="_blank" 
+                   class="inline-block bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600">
+                    <i class="fab fa-github"></i> Besök min GitHub
+                </a>
+            </div>
+
+            <!-- BunnyNews Project -->
+            <div class="max-w-4xl mx-auto bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4 dark:text-white">BunnyNews</h3>
+                <p class="mb-4 dark:text-gray-300">
+                    En nyhetssida byggd med HTML, CSS och JavaScript. Projektet demonstrerar responsiv design 
+                    och dynamisk innehållshantering.
+                </p>
+                <a href="./BunnyNews/index.html" 
+                   class="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+                    Se projekt →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 dark:text-white">Kontakt</h2>
+            <div class="max-w-2xl mx-auto">
+                <p class="text-lg mb-8 dark:text-gray-300">
+                    Intresserad av att samarbeta eller vill veta mer? Hör av dig!
+                </p>
+                <div class="space-y-4">
+                    <p class="text-lg dark:text-gray-300">
+                        <i class="fas fa-envelope"></i> 
+                        <a href="mailto:ninis.blomerus@proton.me" class="text-blue-600 dark:text-blue-400 hover:underline">
+                            ninis.blomerus@proton.me
+                        </a>
+                    </p>
+                    <p class="text-lg dark:text-gray-300">
+                        <i class="fas fa-phone"></i> 0768 - 666 552
+                    </p>
+                    <p class="text-lg dark:text-gray-300">
+                        <i class="fas fa-map-marker-alt"></i> Drottninggatan 27, 702 22 Örebro
+                    </p>
+                </div>
+                <div class="flex justify-center gap-6 mt-8">
+                    <a href="https://github.com/itsabunny" target="_blank" 
+                       class="text-4xl text-gray-800 dark:text-gray-300 hover:text-gray-600 dark:hover:text-white">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ninis-blomerus/" target="_blank" 
+                       class="text-4xl text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@BabyBunny-Cottontail?sub_confirmation=1" target="_blank" 
+                       class="text-4xl text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2025 Ninis Blomerus. Alla rättigheter förbehållna.</p>
+            <p class="mt-2 text-sm text-gray-400">Byggd med passion för kod och kvalitet</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>
