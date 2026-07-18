@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>π</title>
+  <!-- Ingen indexering — privat sida -->
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    :root {
+      --bg: #050508;
+      --green: #00ffaa;
+      --pink: #ff2d78;
+      --text: #eeeef5;
+      --dim: #45455a;
+      --mono: 'JetBrains Mono', 'Courier New', monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--mono);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      text-align: center;
+      padding: 40px 24px;
+    }
+    .pi-symbol {
+      font-size: 6rem;
+      color: var(--green);
+      text-shadow: 0 0 40px rgba(0,255,170,0.5);
+      display: block;
+      margin-bottom: 24px;
+      animation: pulse 3s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { text-shadow: 0 0 40px rgba(0,255,170,0.5); }
+      50%       { text-shadow: 0 0 80px rgba(0,255,170,0.9), 0 0 120px rgba(0,255,170,0.3); }
+    }
+    h1 { font-size: 1.1rem; color: var(--dim); margin-bottom: 12px; }
+    p  { font-size: 0.8rem; color: var(--dim); margin-bottom: 28px; line-height: 1.6; }
+    .back {
+      font-size: 0.75rem;
+      color: var(--dim);
+      text-decoration: none;
+      border: 1px solid #1a1a28;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+    .back:hover {
+      color: var(--pink);
+      border-color: rgba(255,45,120,0.4);
+      background: rgba(255,45,120,0.08);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="pi-symbol">π</span>
+    <h1>// coming soon</h1>
+    <p>
+      Den privata sidan är under konstruktion.<br>
+      Här hamnar snart lösenordsskyddat innehåll,<br>
+      favorit-länkar, schema, att-göra-lista och mer.
+    </p>
+    <a href="../" class="back">← tillbaka</a>
+  </div>
+</body>
+</html>
