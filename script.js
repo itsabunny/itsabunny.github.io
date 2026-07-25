@@ -24,7 +24,7 @@ const LANG_DATA = {
 
     /* Hero */
     heroGreeting: 'Hej, jag heter',
-    heroBio: 'Nyutexaminerad mjukvarutestare och javautvecklare med ett starkt öga för kvalitet, säkerhet och tillgänglighet.',
+    heroBio: 'Nyutexaminerad Javautvecklare och mjukvarutestare med ett starkt öga för kvalitet, säkerhet och tillgänglighet.',
     heroCTA: 'Kontakta mig',
     heroScroll: 'Scrolla ned',
 
@@ -32,13 +32,13 @@ const LANG_DATA = {
     aboutTag: '// om mig',
     aboutTitle: 'Om <span class="accent">mig</span>',
     aboutWindowTitle: 'about.md',
-    aboutP1: 'Jag är <strong>Ninis Blomerus</strong> — mjukvarutestare, javautvecklare och fullstack-nörd från Örebro. Jag tar med mig ett genuint öga för detaljer och en djup förståelse för kvalitet in i varje projekt.',
+    aboutP1: 'Jag är <strong>Ninis Blomerus</strong> — mjukvarutestare, Javautvecklare och fullstack-nörd från Örebro. Jag tar med mig ett genuint öga för detaljer och en djup förståelse för kvalitet in i varje projekt.',
     aboutP2: 'Med bakgrund inom både mjukvarutestning (EC Utbildning, VG på alla kurser) och javautveckling kombinerar jag testdisciplin med fullstack-kodning — jag förstår systemet från båda hållen.',
-    aboutP3: 'Just nu gör jag LIA som WordPress Theme Reviewer för WordPress.org, och arbetar parallellt på mitt examensarbete inom AI.',
+    aboutP3: 'Jag har genomfört LIA som WordPress Theme Reviewer hos Webbstart Sverige HB och fått VG på både LIA och mitt examensarbete inom AI. Jag kombinerar erfarenhet från testning, tillgänglighet och webbutveckling med min utbildning inom Javautveckling.',
     aboutFactsTitle: 'facts.json',
     factLocation: 'Örebro, Sverige',
     factRole: 'Mjukvarutestare & Javautvecklare',
-    factAvail: 'LIA t.o.m. maj 2026',
+    factAvail: 'Tillgänglig för nya möjligheter',
     factLangs: 'Svenska (modersmål), Engelska (flytande)',
     factInterests: 'Djur & djurvälfärd · AI & teknik · Tillgänglighet',
 
@@ -52,8 +52,8 @@ const LANG_DATA = {
     eduWindowTitle: 'education.json',
     edu1Title: 'Javautvecklare (Fullstack)',
     edu1Org: 'EC Utbildning, Örebro',
-    edu1Date: '2024 — 2026 · Pågående',
-    edu1Desc: 'Avancerad fullstack-utbildning med fokus på Java, Spring, REST API:er, databaser och frontend. Starka resultat med VG på majoriteten av kurserna (400 YH-poäng).',
+    edu1Date: '2024 — 2026 · Examen juni 2026',
+    edu1Desc: 'Fullstack-utbildning med fokus på Java, Spring, REST API:er, databaser och frontend. Utbildningen omfattade 400 YH-poäng. VG på både LIA och examensarbete.',
     edu2Title: 'Agil testautomatiserare',
     edu2Org: 'IT-Högskolan Sverige AB',
     edu2Date: '2024 · 60 YH-poäng',
@@ -67,10 +67,10 @@ const LANG_DATA = {
     expTag: '// erfarenhet',
     expTitle: 'Arbets<span class="accent">erfarenhet</span>',
     expWindowTitle: 'experience.json',
-    exp1Title: 'LIA — WordPress Theme Reviewer / Core Contributor',
+    exp1Title: 'LIA — WordPress Theme Reviewer',
     exp1Org: 'Webbstart Sverige HB',
-    exp1Date: 'Nov 2025 — Nu',
-    exp1Desc: 'Utför officiella Theme Reviews för WordPress.org via Trac. Granskar PHP-kod, block-themes (FSE) och React-baserade komponenter. Säkerställer compliance med säkerhetsstandarder, i18n och translation readiness.',
+    exp1Date: 'Nov 2025 — Maj 2026',
+    exp1Desc: 'Genomförde officiella Theme Reviews för WordPress.org via Trac. Granskade PHP-kod, block themes (FSE) och React-baserade komponenter samt säkerställde efterlevnad av säkerhetskrav, i18n och stöd för översättning.',
     exp2Title: 'Mjukvarutestare, Copywriter & WCAG',
     exp2Org: 'Webbstart Sverige HB',
     exp2Date: '2021 — 2023',
@@ -102,7 +102,7 @@ const LANG_DATA = {
     contactCTA: 'Söker du en noggrann och engagerad utvecklare/testare? Hör av dig!',
 
     /* Footer */
-    footerText: '© 2025 Ninis Blomerus · Byggd med passion för kod och kvalitet',
+    footerText: '© 2026 Ninis Blomerus · Byggd med passion för kod och kvalitet',
   },
 
   en: {
@@ -129,11 +129,11 @@ const LANG_DATA = {
     aboutWindowTitle: 'about.md',
     aboutP1: 'I am <strong>Ninis Blomerus</strong> — software tester, Java developer and fullstack enthusiast from Örebro, Sweden. I bring a genuine eye for detail and a deep understanding of quality to every project.',
     aboutP2: 'With a background in both software testing (EC Utbildning, top grades on all courses) and Java development, I combine test discipline with fullstack coding — understanding the system from both sides.',
-    aboutP3: 'I am currently doing my internship (LIA) as a WordPress Theme Reviewer for WordPress.org, while simultaneously working on my thesis project in AI.',
+    aboutP3: 'I completed an internship (LIA) as a WordPress Theme Reviewer at Webbstart Sverige HB and received Distinction (VG) for both my internship and AI thesis project. I combine experience in testing, accessibility and web development with my Java development education.',
     aboutFactsTitle: 'facts.json',
     factLocation: 'Örebro, Sweden',
     factRole: 'Software Tester & Java Developer',
-    factAvail: 'Internship (LIA) until May 2026',
+    factAvail: 'Available for new opportunities',
     factLangs: 'Swedish (native), English (fluent)',
     factInterests: 'Animals & animal welfare · AI & tech · Accessibility',
 
@@ -147,8 +147,8 @@ const LANG_DATA = {
     eduWindowTitle: 'education.json',
     edu1Title: 'Java Developer (Fullstack)',
     edu1Org: 'EC Utbildning, Örebro',
-    edu1Date: '2024 — 2026 · Ongoing',
-    edu1Desc: 'Advanced fullstack program focusing on Java, Spring, REST APIs, databases and frontend. Strong results with Distinction (VG) on the majority of courses (400 YH credits).',
+    edu1Date: '2024 — 2026 · Graduated June 2026',
+    edu1Desc: 'Fullstack program focused on Java, Spring, REST APIs, databases and frontend. The program comprised 400 YH credits. Received Distinction (VG) for both the internship and thesis project.',
     edu2Title: 'Agile Test Automation',
     edu2Org: 'IT-Högskolan Sverige AB',
     edu2Date: '2024 · 60 YH credits',
@@ -162,10 +162,10 @@ const LANG_DATA = {
     expTag: '// experience',
     expTitle: 'Work <span class="accent">experience</span>',
     expWindowTitle: 'experience.json',
-    exp1Title: 'Internship (LIA) — WordPress Theme Reviewer / Core Contributor',
+    exp1Title: 'Internship (LIA) — WordPress Theme Reviewer',
     exp1Org: 'Webbstart Sverige HB',
-    exp1Date: 'Nov 2025 — Present',
-    exp1Desc: 'Performing official Theme Reviews for WordPress.org via Trac. Analyzing PHP code, block themes (FSE) and React-based components. Ensuring compliance with security standards, i18n and translation readiness.',
+    exp1Date: 'Nov 2025 — May 2026',
+    exp1Desc: 'Performed official Theme Reviews for WordPress.org via Trac. Reviewed PHP code, block themes (FSE) and React-based components, ensuring compliance with security standards, i18n and translation readiness.',
     exp2Title: 'Software Tester, Copywriter & WCAG',
     exp2Org: 'Webbstart Sverige HB',
     exp2Date: '2021 — 2023',
@@ -197,7 +197,7 @@ const LANG_DATA = {
     contactCTA: 'Looking for a detail-oriented developer/tester? Reach out!',
 
     /* Footer */
-    footerText: '© 2025 Ninis Blomerus · Built with passion for code and quality',
+    footerText: '© 2026 Ninis Blomerus · Built with passion for code and quality',
   }
 };
 
