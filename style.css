@@ -870,7 +870,8 @@ footer {
 .footer-text {
   font-family: var(--mono);
   font-size: 0.72rem;
-  color: var(--text-dim);
+  color: var(--green);
+  text-shadow: 0 0 10px var(--green-dim);
 }
 
 .footer-right {
